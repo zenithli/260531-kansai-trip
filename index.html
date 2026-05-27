@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>那一日的样子 · 大和路家族小旅行（5/31–6/1）</title>
+<meta name="description" content="鶴橋出发，葛城山缆车+富田林寺内町+亀の井ホテル富田林+サバーファーム+Costco和泉，70+父母和孩子也轻松的一泊二日">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#263238; --ink-soft:#4d5d66; --muted:#7b8d94;
+    --cream:#fff8ed; --cream-deep:#f5e8c8; --paper:#fffdf8;
+    --gold:#d9a441; --gold-deep:#8a6420; --gold-light:#e8c87f;
+    --green:#5b8c5a; --green-deep:#3d6147; --green-soft:#a8c98a;
+    --azalea:#d85c72; --azalea-soft:#f5c2cb;
+    --brown:#7a593f; --brown-light:#c4a584;
+    --sky:#cdefff; --sun:#ffd76b;
+    --line:rgba(38,50,56,0.10); --line-warm:rgba(217,164,65,0.28);
+    --shadow-lg:0 24px 60px rgba(38,50,56,0.18);
+    --shadow-md:0 14px 36px rgba(38,50,56,0.12);
+    --shadow-sm:0 6px 18px rgba(38,50,56,0.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+    color:var(--ink); line-height:1.78; font-size:15.5px;
+    background:var(--cream); overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(circle at 12% 10%, rgba(217,164,65,0.05) 0%, transparent 45%),
+      radial-gradient(circle at 88% 92%, rgba(91,140,90,0.04) 0%, transparent 45%);
+  }
+
+  /* ===== Entry overlay ===== */
+  .enter-overlay{
+    position:fixed; inset:0; z-index:2000;
+    display:flex; align-items:center; justify-content:center;
+    padding:28px; cursor:pointer;
+    background:
+      radial-gradient(ellipse at 20% 25%, rgba(217,164,65,0.16) 0%, transparent 45%),
+      radial-gradient(ellipse at 80% 80%, rgba(91,140,90,0.16) 0%, transparent 45%),
+      linear-gradient(135deg, #1c2620 0%, #2b3a32 50%, #1f2a25 100%);
+    transition:opacity .65s ease, visibility .65s ease;
+  }
+  .enter-overlay.hidden{opacity:0; visibility:hidden; pointer-events:none}
+  .enter-card{
+    text-align:center; max-width:620px; color:#fff5dc;
+    animation:enter-rise .9s cubic-bezier(.2,.7,.2,1) both;
+  }
+  @keyframes enter-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+  .enter-eyebrow{
+    font-family:"Cormorant Garamond",serif; font-style:italic;
+    font-size:14px; letter-spacing:0.35em; text-transform:uppercase;
+    color:var(--gold-light); margin-bottom:22px;
+  }
+  .enter-name{
+    font-family:"Noto Serif SC",serif; font-weight:500;
+    font-size:clamp(32px,5vw,50px); line-height:1.25;
+    letter-spacing:0.04em; margin-bottom:14px; color:#fff5dc;
+  }
+  .enter-name .accent{color:var(--gold-light);
+    font-family:"Cormorant Garamond",serif; font-style:italic; font-weight:500}
+  .enter-sub{
+    font-family:"Noto Serif SC",serif; font-weight:400;
+    font-size:15px; line-height:1.9; max-width:480px; margin:8px auto 24px;
+    color:rgba(255,245,220,0.78);
+  }
+  .enter-date{
+    font-family:"JetBrains Mono",monospace; font-size:13px;
+    letter-spacing:0.08em; color:rgba(255,245,220,0.62);
+    border-top:1px solid rgba(255,245,220,0.18);
+    border-bottom:1px solid rgba(255,245,220,0.18);
+    padding:10px 22px; display:inline-block; margin-bottom:30px;
+  }
+  .enter-btn{
+    font-family:inherit; font-size:15px; font-weight:700;
+    letter-spacing:0.04em; color:#1c2620;
+    background:linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+    border:none; border-radius:40px; padding:14px 40px; cursor:pointer;
+    display:inline-flex; align-items:center; gap:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.42);
+    transition:transform .18s, box-shadow .18s;
+    animation:enter-btn-pulse 2.8s ease-in-out infinite;
+  }
+  .enter-btn:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 14px 36px rgba(0,0,0,0.5)}
+  .enter-btn-ico{font-size:11px}
+  @keyframes enter-btn-pulse{
+    0%,100%{box-shadow:0 10px 30px rgba(0,0,0,0.42)}
+    50%{box-shadow:0 10px 30px rgba(0,0,0,0.42), 0 0 0 12px rgba(232,200,127,0.13)}
+  }
+  .enter-hint{margin-top:18px; font-size:12px; letter-spacing:0.05em; color:rgba(255,245,220,0.42)}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative; min-height:100vh; overflow:hidden;
+    display:grid; place-items:center; padding:80px 18px 130px;
+    background:linear-gradient(180deg, #d9eef8 0%, #fef0d5 56%, #f5e0b6 100%);
+  }
+  .sun{
+    position:absolute; right:13%; top:13%; width:120px; height:120px; border-radius:50%;
+    background:radial-gradient(circle, #fffce0 0%, #ffd76b 55%, rgba(255,215,107,0) 72%);
+    animation:sun-pulse 4.5s ease-in-out infinite;
+  }
+  @keyframes sun-pulse{50%{transform:scale(1.06);opacity:.92}}
+  .cloud{
+    position:absolute; background:#fff; border-radius:999px; opacity:0.85;
+    filter:drop-shadow(0 6px 14px rgba(84,108,128,.14));
+    animation:cloud-drift 38s linear infinite;
+  }
+  .cloud:before,.cloud:after{content:"";position:absolute;background:#fff;border-radius:50%}
+  .cloud.c1{width:160px;height:50px;top:11%;left:-180px}
+  .cloud.c1:before{width:78px;height:78px;left:30px;top:-32px}
+  .cloud.c1:after{width:96px;height:96px;right:18px;top:-44px}
+  .cloud.c2{width:230px;height:64px;top:24%;left:-280px;animation-duration:52s;animation-delay:5s;opacity:0.72}
+  .cloud.c2:before{width:90px;height:90px;left:42px;top:-44px}
+  .cloud.c2:after{width:110px;height:110px;right:30px;top:-54px}
+  .cloud.c3{width:140px;height:44px;top:36%;left:-160px;animation-duration:46s;animation-delay:18s;opacity:0.6}
+  .cloud.c3:before{width:66px;height:66px;left:24px;top:-28px}
+  .cloud.c3:after{width:80px;height:80px;right:14px;top:-36px}
+  @keyframes cloud-drift{to{transform:translateX(calc(100vw + 380px))}}
+
+  .mountains-far{
+    position:absolute; left:0; right:0; bottom:32%;
+    height:30%; pointer-events:none; opacity:0.5;
+    background:linear-gradient(180deg, rgba(82,115,108,0.65), rgba(82,115,108,0.85));
+    clip-path:polygon(0 70%, 8% 50%, 18% 65%, 30% 38%, 42% 60%, 55% 42%, 68% 60%, 80% 45%, 92% 60%, 100% 50%, 100% 100%, 0 100%);
+  }
+  .mountains{
+    position:absolute; left:0; right:0; bottom:0;
+    height:42%; pointer-events:none;
+    background:linear-gradient(180deg, #6b9a6b 0%, #4b7e5a 60%, #3d6147 100%);
+    clip-path:polygon(0 58%, 9% 40%, 21% 62%, 35% 28%, 50% 68%, 64% 36%, 78% 60%, 91% 32%, 100% 56%, 100% 100%, 0 100%);
+  }
+  .azaleas{
+    position:absolute; left:0; right:0; bottom:18%; height:16%;
+    pointer-events:none;
+    background-image:
+      radial-gradient(circle at 8% 60%, var(--azalea) 0 5px, transparent 5px),
+      radial-gradient(circle at 16% 80%, var(--azalea-soft) 0 4px, transparent 4px),
+      radial-gradient(circle at 26% 65%, var(--azalea) 0 4px, transparent 4px),
+      radial-gradient(circle at 34% 85%, var(--azalea-soft) 0 5px, transparent 5px),
+      radial-gradient(circle at 46% 70%, var(--azalea) 0 4px, transparent 4px),
+      radial-gradient(circle at 56% 88%, var(--azalea-soft) 0 4px, transparent 4px),
+      radial-gradient(circle at 66% 65%, var(--azalea) 0 5px, transparent 5px),
+      radial-gradient(circle at 78% 82%, var(--azalea-soft) 0 4px, transparent 4px),
+      radial-gradient(circle at 88% 68%, var(--azalea) 0 4px, transparent 4px);
+    opacity:0.82;
+  }
+  .road{
+    position:absolute; bottom:0; left:-5%; right:-5%; height:17%;
+    background:linear-gradient(180deg, #4d5157, #34383d);
+    clip-path:polygon(0 60%, 100% 22%, 100% 100%, 0 100%);
+  }
+  .road:after{
+    content:""; position:absolute; left:0; right:0; top:42%; height:3px;
+    background:repeating-linear-gradient(90deg, #f9e9a8 0 46px, transparent 46px 92px);
+    opacity:0.85; transform:rotate(-3deg);
+  }
+  .car{
+    position:absolute; bottom:7%; left:-180px; width:148px; height:66px;
+    animation:car-drive 16s ease-in-out infinite;
+    filter:drop-shadow(0 9px 14px rgba(0,0,0,0.28));
+  }
+  .car .body{position:absolute;bottom:15px;width:148px;height:43px;border-radius:24px 32px 16px 16px;background:linear-gradient(180deg,#ff9c79,#e85b48)}
+  .car .top{position:absolute;bottom:43px;left:38px;width:70px;height:34px;border-radius:30px 30px 0 0;background:#fff3e0;border:4px solid #e85b48}
+  .car .w{position:absolute;bottom:5px;width:24px;height:24px;border-radius:50%;background:#263238;border:5px solid #90a4ae}
+  .car .w1{left:22px}.car .w2{right:18px}
+  @keyframes car-drive{
+    0%{transform:translateX(0)} 50%{transform:translateX(calc(100vw + 240px)) translateY(-30px)}
+    100%{transform:translateX(calc(100vw + 240px)) translateY(-30px)}
+  }
+  .bird{position:absolute;font-size:18px;color:rgba(38,50,56,0.45);font-weight:700;animation:bird-fly 26s linear infinite}
+  .bird.b1{top:18%;left:-40px;animation-delay:3s}
+  .bird.b2{top:25%;left:-40px;animation-delay:13s;font-size:14px;opacity:0.7}
+  @keyframes bird-fly{
+    0%{transform:translateX(0) translateY(0)}
+    50%{transform:translateX(50vw) translateY(-22px)}
+    100%{transform:translateX(105vw) translateY(0)}
+  }
+
+  .hero-card{
+    position:relative; z-index:5; max-width:760px; text-align:center;
+    background:rgba(255,253,248,0.86); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.7);
+    border-radius:32px; padding:44px 36px; box-shadow:var(--shadow-lg);
+  }
+  .hero-eyebrow{
+    font-family:"Cormorant Garamond",serif; font-style:italic; font-weight:500;
+    font-size:13px; letter-spacing:0.4em; text-transform:uppercase;
+    color:var(--gold-deep); margin-bottom:14px;
+  }
+  .hero-card h1{
+    font-family:"Noto Serif SC",serif; font-weight:500;
+    font-size:clamp(34px,5vw,56px); line-height:1.2;
+    letter-spacing:0.03em; margin-bottom:16px; color:var(--ink);
+  }
+  .hero-card h1 .accent{color:var(--gold-deep);
+    font-family:"Cormorant Garamond","Noto Serif SC",serif; font-style:italic; font-weight:500}
+  .hero-card .deck{
+    font-family:"Noto Serif SC",serif; font-weight:400;
+    font-size:16px; color:var(--ink-soft); line-height:1.9;
+    max-width:560px; margin:0 auto 22px;
+  }
+  .hero-card .route-text{
+    font-size:13.5px; color:var(--muted); letter-spacing:0.02em;
+    line-height:1.95; margin-bottom:24px;
+  }
+  .hero-card .route-text strong{color:var(--gold-deep);font-weight:600}
+  .hero-dates{
+    display:inline-flex; gap:8px; align-items:baseline;
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:10px 22px; font-family:"JetBrains Mono",monospace; font-size:13px;
+    color:var(--gold-deep); letter-spacing:0.06em; font-weight:600;
+  }
+
+  /* ===== Inline music player ===== */
+  .music-player{
+    display:flex; align-items:center; gap:11px;
+    max-width:420px; margin:24px auto 0;
+    padding:9px 16px;
+    background:rgba(245,232,200,0.65);
+    border:1px solid rgba(217,164,65,0.32);
+    border-radius:40px;
+  }
+  .mp-btn{
+    flex-shrink:0; width:32px; height:32px; padding:0;
+    border:none; border-radius:50%;
+    background:linear-gradient(135deg, var(--gold-deep) 0%, var(--gold) 100%);
+    color:#fff; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    font-size:11px; line-height:1;
+    box-shadow:0 2px 8px rgba(138,100,32,0.3);
+    transition:transform .15s;
+  }
+  .mp-btn:hover{transform:scale(1.1)}
+  .mp-icon-play{margin-left:2px}
+  .mp-icon-pause{display:none;letter-spacing:-1px}
+  .music-player.playing .mp-icon-play{display:none}
+  .music-player.playing .mp-icon-pause{display:inline}
+  .mp-track{position:relative; flex:1; height:5px; background:rgba(38,50,56,0.14); border-radius:3px; cursor:pointer}
+  .mp-fill{position:absolute; left:0; top:0; height:100%; width:0%; background:linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%); border-radius:3px}
+  .mp-thumb{position:absolute; top:50%; left:0%; width:13px; height:13px; transform:translate(-50%,-50%); background:#fff; border:2px solid var(--gold); border-radius:50%; box-shadow:0 1px 3px rgba(0,0,0,0.22); pointer-events:none}
+  .mp-time{flex-shrink:0; font-family:"JetBrains Mono",monospace; font-size:11px; font-weight:500; color:var(--gold-deep); min-width:78px; text-align:right}
+
+  /* ===== Floating music button ===== */
+  .music-toggle{
+    position:fixed; bottom:24px; right:24px;
+    width:48px; height:48px; padding:0;
+    background:linear-gradient(135deg, var(--ink) 0%, var(--green-deep) 100%);
+    color:var(--gold-light);
+    border:1px solid rgba(217,164,65,0.5);
+    border-radius:50%; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 6px 20px rgba(38,50,56,0.32);
+    transition:opacity .2s, transform .2s;
+    z-index:999; opacity:0.88;
+  }
+  .music-toggle:hover{opacity:1;transform:translateY(-3px)}
+  .music-toggle.paused{opacity:0.5}
+  .music-toggle.paused:hover{opacity:0.88}
+  .music-icon{font-size:20px;line-height:1}
+  .music-toggle.playing .music-icon{animation:music-pulse 1.6s ease-in-out infinite}
+  @keyframes music-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+
+  /* ===== Main content ===== */
+  main{max-width:1200px; margin:-90px auto 60px; padding:0 18px; position:relative; z-index:6}
+
+  .section-eyebrow{
+    font-family:"Cormorant Garamond",serif; font-style:italic; font-weight:500;
+    font-size:13px; letter-spacing:0.3em; text-transform:uppercase;
+    color:var(--gold-deep); margin-bottom:8px; text-align:center;
+  }
+  .section-title{
+    font-family:"Noto Serif SC",serif; font-weight:500;
+    font-size:clamp(28px,4vw,44px); line-height:1.25;
+    letter-spacing:0.03em; margin-bottom:8px; text-align:center; color:var(--ink);
+  }
+  .section-title .accent{color:var(--gold-deep);
+    font-family:"Cormorant Garamond","Noto Serif SC",serif; font-style:italic}
+  .section-sub{
+    text-align:center; color:var(--ink-soft); font-size:14.5px; line-height:1.9;
+    max-width:680px; margin:0 auto 32px;
+  }
+
+  /* ===== Spots gallery (the visual centerpiece) ===== */
+  .spots-section{margin:0 auto 60px; max-width:1200px}
+
+  .spot-card{
+    background:var(--paper); border:1px solid var(--line);
+    border-radius:28px; overflow:hidden;
+    box-shadow:var(--shadow-md); margin-bottom:32px;
+    display:grid; grid-template-columns:1fr 1fr;
+  }
+  .spot-card.featured{grid-template-columns:1.3fr 1fr}
+  .spot-card.reverse{grid-template-columns:1fr 1.3fr}
+  .spot-card.reverse .spot-photo{order:2}
+  .spot-card.reverse .spot-body{order:1}
+
+  .spot-photo{
+    position:relative; min-height:340px; overflow:hidden;
+    background:linear-gradient(135deg, var(--cream-deep), var(--cream));
+  }
+  .spot-photo img{
+    width:100%; height:100%; object-fit:cover; display:block;
+    transition:transform .8s ease;
+  }
+  .spot-card:hover .spot-photo img{transform:scale(1.04)}
+  .spot-photo .photo-tag{
+    position:absolute; top:18px; left:18px;
+    background:rgba(255,253,248,0.95); color:var(--gold-deep);
+    font-size:11px; font-weight:700; letter-spacing:0.18em;
+    padding:6px 14px; border-radius:30px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  }
+  .spot-thumbs{
+    position:absolute; bottom:14px; left:14px; right:14px;
+    display:flex; gap:8px;
+  }
+  .spot-thumbs img{
+    width:64px; height:48px; object-fit:cover;
+    border-radius:6px; border:2px solid rgba(255,255,255,0.85);
+    box-shadow:0 2px 8px rgba(0,0,0,0.25); cursor:pointer;
+    transition:transform .2s;
+  }
+  .spot-thumbs img:hover{transform:scale(1.08)}
+
+  .spot-body{
+    padding:32px 36px;
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .spot-no{
+    font-family:"Cormorant Garamond",serif; font-style:italic;
+    font-size:14px; letter-spacing:0.3em; text-transform:uppercase;
+    color:var(--gold-deep); margin-bottom:10px;
+  }
+  .spot-name{
+    font-family:"Noto Serif SC",serif; font-weight:500;
+    font-size:clamp(22px,2.8vw,30px); line-height:1.3;
+    margin-bottom:8px; color:var(--ink); letter-spacing:0.02em;
+  }
+  .spot-name .accent-line{
+    display:block; width:36px; height:2px; background:var(--gold);
+    margin:14px 0 16px;
+  }
+  .spot-desc{
+    color:var(--ink-soft); font-size:14.5px; line-height:1.9;
+    margin-bottom:18px;
+  }
+  .spot-desc strong{color:var(--gold-deep); font-weight:600}
+  .spot-meta{
+    display:grid; gap:6px; padding-top:14px;
+    border-top:1px dashed var(--line);
+    font-family:"JetBrains Mono",monospace; font-size:12px;
+    color:var(--muted); line-height:1.7;
+  }
+  .spot-meta div span{color:var(--gold-deep); font-weight:600; margin-right:6px}
+
+  /* ===== Day timeline ===== */
+  .day-panel{
+    background:var(--paper); border:1px solid var(--line);
+    border-radius:28px; padding:32px 30px; margin:24px 0;
+    box-shadow:var(--shadow-md);
+  }
+  .day-header-row{
+    display:flex; align-items:baseline; gap:18px; flex-wrap:wrap;
+    border-bottom:2px solid var(--line); padding-bottom:12px; margin-bottom:20px;
+  }
+  .day-badge{
+    font-family:"Cormorant Garamond",serif; font-style:italic;
+    background:linear-gradient(135deg, var(--gold-deep), var(--gold));
+    color:#fff; padding:6px 18px; border-radius:30px;
+    font-size:14px; font-weight:600; letter-spacing:0.08em;
+    box-shadow:0 3px 10px rgba(138,100,32,0.25);
+  }
+  .day-h{
+    font-family:"Noto Serif SC",serif; font-size:24px; font-weight:500;
+    color:var(--ink);
+  }
+  .day-h small{display:block; font-size:12px; color:var(--muted);
+    font-family:"JetBrains Mono",monospace; letter-spacing:0.04em; margin-top:3px;
+    font-weight:400;}
+
+  .timeline{display:grid; gap:14px}
+  .slot{display:grid; grid-template-columns:130px 1fr; gap:18px; align-items:stretch}
+  .slot .time{
+    background:linear-gradient(135deg, var(--green-deep) 0%, var(--green) 100%);
+    color:#fff; border-radius:18px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:12px 10px;
+    box-shadow:0 4px 12px rgba(61,97,71,0.22);
+  }
+  .slot .time strong{font-family:"JetBrains Mono",monospace; font-size:15px; font-weight:600; letter-spacing:0.03em; line-height:1.3}
+  .slot .time em{font-style:normal; font-size:11px; opacity:0.82; margin-top:2px; letter-spacing:0.04em}
+  .slot .event{
+    background:#fff; border:1px solid var(--line);
+    border-radius:18px; padding:16px 20px;
+    box-shadow:var(--shadow-sm);
+  }
+  .slot .event h3{
+    font-family:"Noto Serif SC",serif; font-size:17px; font-weight:600;
+    color:var(--ink); margin-bottom:6px;
+  }
+  .slot .event p{color:var(--ink-soft); font-size:14px; line-height:1.85}
+  .slot .event small{
+    display:block; margin-top:8px; color:var(--muted);
+    font-family:"JetBrains Mono",monospace; font-size:11.5px; letter-spacing:0.03em;
+  }
+  .slot.highlight .event{
+    background:linear-gradient(135deg, #fff9ef 0%, #fff 100%);
+    border-color:var(--line-warm);
+  }
+  .slot.highlight .event h3{color:var(--gold-deep)}
+
+  /* ===== Info cards ===== */
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:6px}
+  .info-card{
+    background:linear-gradient(135deg, var(--cream) 0%, var(--paper) 100%);
+    border:1px solid var(--line);
+    border-radius:18px; padding:18px 20px;
+  }
+  .info-card .label{
+    font-family:"Cormorant Garamond",serif; font-style:italic;
+    font-size:12px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--gold-deep); margin-bottom:8px;
+  }
+  .info-card h4{
+    font-family:"Noto Serif SC",serif; font-size:16px; font-weight:600;
+    margin-bottom:10px; color:var(--ink);
+  }
+  .info-card .rows{display:grid; gap:5px; font-size:13px; color:var(--ink-soft)}
+  .info-card .rows .row{display:flex; gap:8px}
+  .info-card .rows .row span{color:var(--muted); min-width:60px; flex-shrink:0}
+  .info-card .rows strong{color:var(--ink);font-weight:600}
+
+  /* ===== Cautions ===== */
+  .cautions-panel{
+    background:linear-gradient(135deg, #fff5e8 0%, #fef0d5 100%);
+    border:1px solid var(--line-warm);
+    border-left:5px solid var(--gold);
+  }
+  .caution-list{display:grid; gap:11px; margin-top:6px}
+  .caution-list .item{
+    display:grid; grid-template-columns:32px 1fr; gap:10px; align-items:start;
+    padding:11px 0; border-bottom:1px dashed rgba(217,164,65,0.3);
+  }
+  .caution-list .item:last-child{border-bottom:none}
+  .caution-list .ico{
+    width:26px; height:26px; border-radius:50%;
+    background:rgba(217,164,65,0.18); color:var(--gold-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-size:13px; font-weight:700;
+  }
+  .caution-list .text{font-size:13.5px; line-height:1.78; color:var(--ink-soft)}
+  .caution-list .text strong{color:var(--gold-deep); font-weight:600}
+
+  /* ===== Family band ===== */
+  .family-band{
+    background:linear-gradient(180deg, #fef8eb 0%, #f5e8c8 100%);
+    padding:38px 28px; border-radius:28px;
+    position:relative; overflow:hidden;
+    border:1px solid var(--line); margin:24px 0;
+  }
+  .family-band .caption{text-align:center; margin-bottom:18px}
+  .family-band .caption-eyebrow{
+    font-family:"Cormorant Garamond",serif; font-style:italic;
+    font-size:13px; letter-spacing:0.3em; text-transform:uppercase;
+    color:var(--gold-deep); margin-bottom:8px;
+  }
+  .family-band .caption-text{
+    font-family:"Noto Serif SC",serif; font-size:18px; font-weight:500;
+    color:var(--ink); line-height:1.7;
+  }
+  .silhouettes{position:relative; height:140px; max-width:560px; margin:18px auto 0}
+  .silhouettes .hill{
+    position:absolute; left:-5%; right:-5%; bottom:0;
+    height:50px;
+    background:linear-gradient(180deg, var(--green-soft), var(--green));
+    border-radius:50% 50% 0 0;
+  }
+  .person{position:absolute; bottom:30px; width:38px; height:80px; animation:bob 2.8s ease-in-out infinite}
+  .person:before{content:""; position:absolute; top:0; left:9px; width:20px; height:20px; border-radius:50%; background:#f0c29a}
+  .person:after{content:""; position:absolute; top:22px; left:5px; width:28px; height:42px; border-radius:14px 14px 8px 8px; background:var(--c)}
+  .person i{position:absolute; bottom:0; left:11px; width:6px; height:24px; background:#465a64; border-radius:6px; box-shadow:11px 0 0 #465a64; font-style:normal}
+  .p-grandpa{left:18%; --c:#6b8e8b; height:75px}
+  .p-grandma{left:30%; --c:#a8857d; height:70px; animation-delay:0.3s}
+  .p-dad{left:46%; --c:#5b7c6d; animation-delay:0.6s}
+  .p-mom{left:60%; --c:#c47878; animation-delay:0.4s}
+  .p-kid{left:74%; --c:#f0c25a; height:55px; bottom:38px; animation-delay:0.8s}
+  @keyframes bob{50%{transform:translateY(-7px)}}
+
+  /* ===== Footer ===== */
+  footer{
+    text-align:center; padding:40px 24px 60px;
+    color:var(--muted); font-size:13px;
+    border-top:1px solid var(--line); margin-top:36px;
+  }
+  footer .footer-quote{
+    font-family:"Noto Serif SC",serif; font-size:18px; color:var(--ink);
+    margin-bottom:10px; line-height:1.7;
+  }
+  footer .footer-credit{
+    font-family:"JetBrains Mono",monospace; font-size:10.5px;
+    letter-spacing:0.04em; color:var(--muted); margin-top:12px;
+  }
+  footer a{color:var(--gold-deep); text-decoration:none}
+
+  /* ===== Responsive ===== */
+  @media(max-width:840px){
+    .spot-card,.spot-card.featured,.spot-card.reverse{grid-template-columns:1fr}
+    .spot-card.reverse .spot-photo{order:1}
+    .spot-card.reverse .spot-body{order:2}
+    .spot-photo{min-height:260px}
+    .spot-body{padding:24px 26px}
+  }
+  @media(max-width:680px){
+    .hero{padding:60px 14px 100px}
+    .slot{grid-template-columns:1fr; gap:8px}
+    .slot .time{padding:8px; flex-direction:row; gap:8px; justify-content:flex-start}
+    .slot .time strong{font-size:14px}
+    .day-panel{padding:24px 20px}
+  }
+  @media print{
+    .enter-overlay,.music-player,.music-toggle,.cloud,.bird,.car{display:none!important}
+    body{background:white}
+    .hero{min-height:auto;background:white;padding:30px 0}
+    .day-panel{box-shadow:none;break-inside:avoid}
+    .spot-card{box-shadow:none;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ ENTRY OVERLAY ============ -->
+<div class="enter-overlay" id="enter-overlay" role="button" tabindex="0" aria-label="进入旅程">
+  <div class="enter-card">
+    <div class="enter-eyebrow">A FAMILY MEMORY · IN BLOOM</div>
+    <div class="enter-name">那一日的样子<br><span class="accent">大和路の旅</span></div>
+    <div class="enter-sub">鶴橋出发，一泊二日。葛城山的缆车、富田林寺内町的石板路、亀の井ホテル的展望与温泉、サバーファーム的花田——给 70+ 父母和孩子，一段不赶的近郊回忆。</div>
+    <div class="enter-date">2026 . 5 . 31  日   ——   6 . 1  月</div>
+    <button class="enter-btn" id="enter-btn" type="button"><span class="enter-btn-ico">▶</span> 进入旅程</button>
+    <div class="enter-hint">♪ 进入后 70 年代歌谣メドレー 自动播放</div>
+  </div>
+</div>
+<noscript><style>#enter-overlay{display:none!important;}</style></noscript>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="sun"></div>
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+  <div class="bird b1">⌒</div><div class="bird b2">⌒</div>
+  <div class="mountains-far"></div>
+  <div class="mountains"></div>
+  <div class="azaleas"></div>
+  <div class="road"></div>
+  <div class="car"><div class="top"></div><div class="body"></div><div class="w w1"></div><div class="w w2"></div></div>
+  <div class="hero-card">
+    <div class="hero-eyebrow">FAMILY TRIP · 大和路 一泊二日</div>
+    <h1>那一日的样子<span class="accent">、大和路の旅</span></h1>
+    <p class="deck">三世同行，初夏的奈良与大阪南部。新绿的葛城山、江户街道、温泉与展望、第二天清晨的花田与寺町——给 70+ 父母最合适的轻松节奏。</p>
+    <div class="route-text">
+      <strong>鶴橋</strong> → 葛城山ロープウェイ → サバーファーム花田<br>
+      → <strong>亀の井ホテル富田林</strong>（温泉 + 展望 + 晚餐）<br>
+      → 寺内町石板路 → Costco 和泉 → <strong>鶴橋</strong>
+    </div>
+    <div class="hero-dates">2026.05.31 日 — 06.01 月</div>
+    <div class="music-player" id="music-player">
+      <button class="mp-btn" id="mp-btn" type="button" aria-label="背景音乐 播放/暂停"><span class="mp-icon-play">▶</span><span class="mp-icon-pause">❚❚</span></button>
+      <div class="mp-track" id="mp-track" role="slider" aria-label="音乐进度" tabindex="0"><div class="mp-fill" id="mp-fill"></div><div class="mp-thumb" id="mp-thumb"></div></div>
+      <span class="mp-time" id="mp-time">0:00 / 0:00</span>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- ============ SPOTS GALLERY (centerpiece) ============ -->
+<section class="spots-section">
+  <div class="section-eyebrow">FIVE PLACES · 五段风景</div>
+  <h2 class="section-title">先看这些 <span class="accent">— scenes worth going for</span></h2>
+  <p class="section-sub">每个景点都不需要赶路：缆车上山只要 6 分钟、寺内町散步 1 小时、酒店一夜慢节奏。下面是五个会让人立刻想出发的画面。</p>
+
+  <!-- Spot 1: 葛城山 -->
+  <article class="spot-card featured">
+    <div class="spot-photo">
+      <img src="images/katsuragi-azalea.jpg" alt="大和葛城山 山顶ツツジ" loading="lazy">
+      <div class="photo-tag">DAY 1 · 上午</div>
+      <div class="spot-thumbs">
+        <img src="images/katsuragi-mountain.jpg" alt="葛城山远景" onclick="document.querySelector('.spot-card.featured .spot-photo > img').src=this.src">
+        <img src="images/katsuragi-ropeway.jpg" alt="葛城山缆车" onclick="document.querySelector('.spot-card.featured .spot-photo > img').src=this.src">
+        <img src="images/katsuragi-azalea.jpg" alt="一面山的ツツジ" onclick="document.querySelector('.spot-card.featured .spot-photo > img').src=this.src">
+      </div>
+    </div>
+    <div class="spot-body">
+      <div class="spot-no">01 · KATSURAGI</div>
+      <h3 class="spot-name">大和葛城山<span class="accent-line"></span></h3>
+      <p class="spot-desc">奈良和大阪交界处 <strong>959 米</strong> 的山岭，"一目百万本" 的 ツツジ 花海。<strong>不用爬山</strong>——缆车 6 分钟上到山顶站，老人和小孩都轻松。5 月底虽然 ツツジ 已经尾期，但山顶的新绿和奈良盆地全景仍是这次出行最美的一段。</p>
+      <div class="spot-meta">
+        <div><span>地址</span>奈良县御所市櫛羅 2503-1</div>
+        <div><span>票价</span><strong>缆车往返 大人 ¥1,500 / 小人 ¥750</strong></div>
+        <div><span>运行</span>缆车每 20 分钟一班，单程 6 分钟</div>
+        <div><span>注意</span><strong>6/1 — 6/17 定期点检停运</strong>（5/31 当天正常）</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Spot 2: サバーファーム -->
+  <article class="spot-card reverse featured">
+    <div class="spot-photo">
+      <img src="images/farm-poppy.jpg" alt="サバーファーム ポピー 花畑" loading="lazy">
+      <div class="photo-tag">DAY 1 · 下午</div>
+      <div class="spot-thumbs">
+        <img src="images/farm-poppy.jpg" alt="花畑" onclick="document.querySelector('.spot-card.reverse .spot-photo > img').src=this.src">
+        <img src="images/farm-market.jpg" alt="市场" onclick="document.querySelector('.spot-card.reverse .spot-photo > img').src=this.src">
+      </div>
+    </div>
+    <div class="spot-body">
+      <div class="spot-no">02 · SAVOR FARM</div>
+      <h3 class="spot-name">サバーファーム<br><span style="font-size:0.62em;color:var(--muted);font-weight:400;font-style:italic;letter-spacing:0.04em">— 富田林市农业公园</span><span class="accent-line"></span></h3>
+      <p class="spot-desc">大阪府内最大的体验型农业公园，约 <strong>20 公顷</strong>。5 月底是 <strong>ポピーフェスタ</strong>（虞美人花节），整片山坡铺满橙红粉黄。还有市集买当地蔬菜面包、轻食 BBQ、当季收获体验，<strong>给孩子和父母都有事可做、有椅可坐</strong>。</p>
+      <div class="spot-meta">
+        <div><span>地址</span>大阪府富田林市甘南備 1495</div>
+        <div><span>入园</span><strong>大人 ¥500 / 小人 ¥300</strong></div>
+        <div><span>营业</span>9:30 — 17:00（入园至 16:30）</div>
+        <div><span>休园</span><strong>周一定休</strong>（6/1 关门，所以放在 Day 1）</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Spot 3: 亀の井ホテル -->
+  <article class="spot-card featured">
+    <div class="spot-photo">
+      <img src="images/hotel-room.webp" alt="亀の井ホテル富田林 客房 展望" loading="lazy">
+      <div class="photo-tag">DAY 1 · 夜</div>
+      <div class="spot-thumbs">
+        <img src="images/hotel-room.webp" alt="展望客房" onclick="document.querySelector('.spot-card:nth-of-type(3) .spot-photo > img').src=this.src">
+        <img src="images/hotel-onsen.webp" alt="展望温泉" onclick="document.querySelector('.spot-card:nth-of-type(3) .spot-photo > img').src=this.src">
+        <img src="images/hotel-dining.webp" alt="晚餐料理" onclick="document.querySelector('.spot-card:nth-of-type(3) .spot-photo > img').src=this.src">
+      </div>
+    </div>
+    <div class="spot-body">
+      <div class="spot-no">03 · KAMENOI HOTEL</div>
+      <h3 class="spot-name">亀の井ホテル 富田林<span class="accent-line"></span></h3>
+      <p class="spot-desc">山上酒店，<strong>展望温泉、和洋会席自助、屋顶展望露台</strong> 一望大阪平野和金刚山。オールインクルーシブ（一价全包）—— 房价里已含晚餐早餐和饮料，老人不需要再算账，孩子可以放开点。Day 1 在这里把节奏完全放慢。</p>
+      <div class="spot-meta">
+        <div><span>地址</span>大阪府富田林市龍泉 880-1</div>
+        <div><span>入住</span>15:00 / 退房 10:00</div>
+        <div><span>停车</span><strong>150 台 免费</strong></div>
+        <div><span>电话</span>0721-25-8888</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Spot 4: 寺内町 -->
+  <article class="spot-card reverse featured">
+    <div class="spot-photo">
+      <img src="images/jinaicho-day.jpg" alt="富田林寺内町 江戸町並み" loading="lazy">
+      <div class="photo-tag">DAY 2 · 上午</div>
+      <div class="spot-thumbs">
+        <img src="images/jinaicho-day.jpg" alt="白天的寺内町" onclick="document.querySelector('.spot-card:nth-of-type(4) .spot-photo > img').src=this.src">
+        <img src="images/jinaicho-night.jpg" alt="夜的寺内町" onclick="document.querySelector('.spot-card:nth-of-type(4) .spot-photo > img').src=this.src">
+        <img src="images/jinaicho-house.jpg" alt="旧杉山家住宅" onclick="document.querySelector('.spot-card:nth-of-type(4) .spot-photo > img').src=this.src">
+      </div>
+    </div>
+    <div class="spot-body">
+      <div class="spot-no">04 · JINAICHO</div>
+      <h3 class="spot-name">富田林寺内町<span class="accent-line"></span></h3>
+      <p class="spot-desc">大阪府唯一被指定为国家 <strong>重要传统建造物群保存地区</strong> 的江户古街。约 <strong>220 栋</strong> 江户-明治时代的町家保存完好，<strong>城之门筋</strong> 的石板路、格子戸、白墙黑瓦，30 分钟散步像穿越 300 年。从酒店开车 10 分钟，第二天上午退房后顺路。</p>
+      <div class="spot-meta">
+        <div><span>地址</span>大阪府富田林市富田林町</div>
+        <div><span>散步</span>免费 · 推荐 1-1.5 小时</div>
+        <div><span>距酒店</span>约 10 分钟</div>
+        <div><span>建议</span>看 <strong>旧杉山家住宅</strong>（国指定重要文化财）</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Spot 5: Costco -->
+  <article class="spot-card">
+    <div class="spot-photo" style="background:linear-gradient(135deg, #d8463b 0%, #b8362b 100%); min-height:280px;">
+      <div class="photo-tag" style="background:#fff; color:#d8463b">DAY 2 · 中午</div>
+      <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; padding:30px; text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif; font-size:54px; font-weight:700; letter-spacing:0.15em; text-shadow:0 4px 12px rgba(0,0,0,0.3); margin-bottom:8px;">COSTCO</div>
+        <div style="font-size:14px; letter-spacing:0.3em; opacity:0.92;">— 和泉倉庫店 —</div>
+        <div style="margin-top:18px; font-size:32px;">🛒 🛍️ 📦</div>
+        <div style="margin-top:14px; padding:6px 18px; border:1px solid rgba(255,255,255,0.5); border-radius:30px; font-size:12px; letter-spacing:0.12em;">10:00 — 20:00</div>
+      </div>
+    </div>
+    <div class="spot-body">
+      <div class="spot-no">05 · COSTCO &amp; LALAPORT</div>
+      <h3 class="spot-name">Costco 和泉 + ららぽーと和泉<span class="accent-line"></span></h3>
+      <p class="spot-desc">回家前的最后一站，<strong>购物 + 午饭 + 休息</strong>。Costco 开门即冲，人少；隔壁 <strong>ららぽーと和泉</strong> 有 200+ 家店和大食堂，老人小孩各取所需。从这里走阪和道回鹤桥/天王寺约 50 分钟。</p>
+      <div class="spot-meta">
+        <div><span>地址</span>大阪府和泉市あゆみ野 4-4-45</div>
+        <div><span>营业</span>10:00 — 20:00</div>
+        <div><span>电话</span>0725-99-7300</div>
+        <div><span>建议</span>带保冷袋（冷冻品最后买）</div>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<!-- ============ DAY 1 ============ -->
+<div class="day-panel">
+  <div class="day-header-row">
+    <div class="day-badge">DAY 1</div>
+    <div class="day-h">5月31日 · 周日<small>RUSHIHASHI · KATSURAGI · SAVOR FARM · KAMENOI</small></div>
+  </div>
+  <div class="timeline">
+    <div class="slot">
+      <div class="time"><strong>08:30</strong><em>出发</em></div>
+      <div class="event">
+        <h3>鶴橋駅周边出发</h3>
+        <p>自驾约 1 小时到葛城山ロープウェイ登山口。早出避高速堵车，周日早上的高速最顺畅。走南阪奈道。</p>
+        <small>SCHEDULED · BUFFER 15 MIN</small>
+      </div>
+    </div>
+    <div class="slot highlight">
+      <div class="time"><strong>10:00</strong><em>抵达</em></div>
+      <div class="event">
+        <h3>葛城山ロープウェイ 登山口駅</h3>
+        <p>到达后先停车、上厕所、买票，再上缆车。<strong>往返大人 ¥1,500</strong>，单程 6 分钟，每 20 分钟一班。山上比山下凉 5℃，备薄外套。</p>
+        <small>停车场 / 售票处 / 售货机一应俱全</small>
+      </div>
+    </div>
+    <div class="slot highlight">
+      <div class="time"><strong>10:30</strong><em>山顶</em></div>
+      <div class="event">
+        <h3>山顶展望 + 新绿散步 + 售货部午饭</h3>
+        <p>缆车山顶站出来沿展望平台缓慢走 1-1.5 小时，看奈良盆地和大阪平野的全景。山顶 売店 有乌冬、咖喱、关东煮、ソフトクリーム。<strong>不走登山路线</strong>，看完原路返回。</p>
+        <small>WALKING 60-90 MIN · 山顶售货部 LUNCH</small>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time"><strong>12:30</strong><em>下山</em></div>
+      <div class="event">
+        <h3>下山 → 开车去 サバーファーム</h3>
+        <p>南阪奈道 → 近畿道，约 50 分钟。途中便利店补水。</p>
+        <small>50 MIN DRIVE</small>
+      </div>
+    </div>
+    <div class="slot highlight">
+      <div class="time"><strong>13:30</strong><em>农场</em></div>
+      <div class="event">
+        <h3>サバーファーム · 花田 + 市集 + 收获体验</h3>
+        <p>5 月底是 <strong>ポピーフェスタ</strong>。20 公顷大农场，老人累了就坐下，孩子有花田、ヤギ、轻 BBQ、玉米/蕃茄收获体验。<strong>大人 ¥500 / 小人 ¥300</strong>。</p>
+        <small>2.5 H · 入园截止 16:30 · 周一定休</small>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time"><strong>16:30</strong><em>移动</em></div>
+      <div class="event">
+        <h3>开车去 亀の井ホテル富田林</h3>
+        <p>农场到酒店同市内，约 15 分钟。富田林市龍泉 880-1。</p>
+        <small>15 MIN DRIVE</small>
+      </div>
+    </div>
+    <div class="slot highlight">
+      <div class="time"><strong>17:00</strong><em>入住</em></div>
+      <div class="event">
+        <h3>亀の井ホテル富田林 · Check-in</h3>
+        <p>入住后到客房休息一会儿，<strong>展望温泉 → 18:30 晚餐自助 → 屋顶展望露台看夜景</strong>。オールインクルーシブ，饮料随便点。父母不喜欢温泉也可以直接去展望台拍全家照。</p>
+        <small>夕食 18:30 / 温泉 24H 开放</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ DAY 2 ============ -->
+<div class="day-panel">
+  <div class="day-header-row">
+    <div class="day-badge">DAY 2</div>
+    <div class="day-h">6月1日 · 周一<small>BREAKFAST · JINAICHO · COSTCO · HOMECOMING</small></div>
+  </div>
+  <div class="timeline">
+    <div class="slot">
+      <div class="time"><strong>08:00</strong><em>早晨</em></div>
+      <div class="event">
+        <h3>朝湯 + 早餐 + 展望露台</h3>
+        <p>不赶。早起朝風呂、和洋早餐自助、屋顶展望露台拍家族照——清晨的空气最透。</p>
+        <small>NO RUSH · 拍照最佳时段</small>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time"><strong>09:30</strong><em>退房</em></div>
+      <div class="event">
+        <h3>退房 · 行李上车</h3>
+        <p>10:00 前退房。行李先装车，下面寺内町只带手机水和小包。</p>
+        <small>CHECK-OUT 10:00</small>
+      </div>
+    </div>
+    <div class="slot highlight">
+      <div class="time"><strong>10:00</strong><em>寺町</em></div>
+      <div class="event">
+        <h3>富田林寺内町 · 江戸街道散步</h3>
+        <p>从酒店开车 10 分钟到。沿 <strong>城之门筋</strong> 慢走 1-1.5 小时，看 旧杉山家住宅（国指定重要文化财）、街角的小咖啡、格子戸。下雨也没关系，街区有屋檐。</p>
+        <small>1-1.5 H · 散策无料 · 路边有 PARKING</small>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time"><strong>11:30</strong><em>移动</em></div>
+      <div class="event">
+        <h3>开车去 Costco 和泉</h3>
+        <p>近畿道 → 阪和道，约 25 分钟。</p>
+        <small>25 MIN DRIVE</small>
+      </div>
+    </div>
+    <div class="slot highlight">
+      <div class="time"><strong>12:00</strong><em>购物</em></div>
+      <div class="event">
+        <h3>Costco 和泉 + ららぽーと午饭</h3>
+        <p>Costco 中午 12 点已经有人但还能逛，先 Costco 后 ららぽーと 吃午饭。<strong>Costco 只买重点</strong>：零食、肉类、日用品、伴手礼。带保冷袋装冷冻品。</p>
+        <small>1.5 - 2 H · 別逛太久</small>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time"><strong>14:00</strong><em>休息</em></div>
+      <div class="event">
+        <h3>ららぽーと和泉 · 午饭 + 喝咖啡 + 逛街</h3>
+        <p>200+ 家店，老人小孩各有所需。在咖啡店坐 30 分钟，让父母彻底休息一下。</p>
+        <small>1.5 H</small>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time"><strong>15:30</strong><em>回家</em></div>
+      <div class="event">
+        <h3>阪和道 → 鶴橋 / 天王寺方向</h3>
+        <p>阪和道 → 近畿道 → 阪神高速。约 50 分钟，傍晚 4:30 前后到。</p>
+        <small>50 MIN · 約 16:30 抵达</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRACTICAL INFO ============ -->
+<div class="day-panel">
+  <div class="day-header-row">
+    <div class="day-badge">PRACTICAL</div>
+    <div class="day-h">出发前 · 一图掌握<small>HOTEL · TICKETS · DRIVE · PACKING</small></div>
+  </div>
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="label">HOTEL</div>
+      <h4>亀の井ホテル富田林</h4>
+      <div class="rows">
+        <div class="row"><span>地址</span><strong>富田林市龍泉 880-1</strong></div>
+        <div class="row"><span>入住</span>15:00</div>
+        <div class="row"><span>退房</span>10:00</div>
+        <div class="row"><span>停车</span>150 台 免费</div>
+        <div class="row"><span>用餐</span>オールインクルーシブ</div>
+        <div class="row"><span>电话</span>0721-25-8888</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="label">TICKETS</div>
+      <h4>入场料 · 通行料</h4>
+      <div class="rows">
+        <div class="row"><span>葛城山</span><strong>大人 ¥1,500</strong> 缆车往返</div>
+        <div class="row"><span>葛城山</span>小人 ¥750 缆车往返</div>
+        <div class="row"><span>サバー</span><strong>大人 ¥500</strong> / 小人 ¥300</div>
+        <div class="row"><span>寺内町</span>散步免费</div>
+        <div class="row"><span>高速</span>南阪奈+近畿道 约 ¥2,500/日</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="label">DRIVE</div>
+      <h4>移动距离 · 所需时间</h4>
+      <div class="rows">
+        <div class="row"><span>鶴橋→葛城山</span>约 60 分钟</div>
+        <div class="row"><span>葛城山→农场</span>约 50 分钟</div>
+        <div class="row"><span>农场→酒店</span>约 15 分钟</div>
+        <div class="row"><span>酒店→寺内町</span>约 10 分钟</div>
+        <div class="row"><span>寺内町→Costco</span>约 25 分钟</div>
+        <div class="row"><span>Costco→鶴橋</span>约 50 分钟</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="label">PACKING</div>
+      <h4>必带物品 · 家族版</h4>
+      <div class="rows">
+        <div class="row">🧥 山顶比市内低 5℃，薄外套</div>
+        <div class="row">👟 好走路的鞋（农场是土地）</div>
+        <div class="row">🌞 帽子 + 防晒霜</div>
+        <div class="row">💊 父母常备药</div>
+        <div class="row">🎒 孩子换洗衣物</div>
+        <div class="row">🧊 Costco 保冷袋（冷冻品）</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CAUTIONS ============ -->
+<div class="day-panel cautions-panel">
+  <div class="day-header-row">
+    <div class="day-badge" style="background:linear-gradient(135deg, #c93c30, #d8463b)">CHECK</div>
+    <div class="day-h">出发前 1 天必看<small>WEATHER · CLOSURE · CONTINGENCY</small></div>
+  </div>
+  <div class="caution-list">
+    <div class="item">
+      <div class="ico">!</div>
+      <div class="text"><strong>葛城山ロープウェイ 6/1 起停运</strong>，5/31 当天正常。出发前一天看 <em>kintetsu.co.jp/katsuragisanropeway/</em> 确认。</div>
+    </div>
+    <div class="item">
+      <div class="ico">!</div>
+      <div class="text"><strong>サバーファーム 周一定休</strong>，所以挤进 Day 1 下午。当天的收获体验和花的状况看 <em>savorfarm.jp</em> 公告。</div>
+    </div>
+    <div class="item">
+      <div class="ico">☔</div>
+      <div class="text"><strong>5 月底大阪正进入梅雨季</strong>，有突阵雨可能。雨天 Day 1 葛城山改成<strong>下赤阪棚田</strong>（千早赤阪村，日本棚田百选）或直接酒店半日游。车上带雨具。</div>
+    </div>
+    <div class="item">
+      <div class="ico">⏱</div>
+      <div class="text"><strong>Day 1 是密集日</strong>。如果父母在山顶就明显疲劳，下山后<strong>直接去酒店</strong>，跳过 サバーファーム，把农场移到 Day 2 上午（但要确认当天是周日不是周一）。</div>
+    </div>
+    <div class="item">
+      <div class="ico">📞</div>
+      <div class="text">亀の井ホテル富田林 <strong>0721-25-8888</strong> · Costco 和泉 <strong>0725-99-7300</strong> · サバーファーム <strong>0721-35-3500</strong>。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FAMILY BAND ============ -->
+<div class="family-band">
+  <div class="caption">
+    <div class="caption-eyebrow">A SONG FROM THAT DAY</div>
+    <div class="caption-text">孩子的笑声 · 父母年轻时的歌 · 山顶的新绿<br><span style="color:var(--gold-deep)">——那一日的样子，就此留下。</span></div>
+  </div>
+  <div class="silhouettes">
+    <div class="hill"></div>
+    <div class="person p-grandpa"><i></i></div>
+    <div class="person p-grandma"><i></i></div>
+    <div class="person p-dad"><i></i></div>
+    <div class="person p-mom"><i></i></div>
+    <div class="person p-kid"><i></i></div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="footer-quote">三世代、五个人，一场不赶的近郊小旅。</div>
+  <div>那一日的样子 · 大和路の旅 · 鶴橋发 1 泊 2 日</div>
+  <div class="footer-credit">
+    PHOTOS · Wikimedia Commons (葛城山 / 寺内町) · Official sites (亀の井ホテル / サバーファーム) <br>
+    BGM · 70 年代歌謡メドレー「あの日のまま」 · 仅作个人家族旅行规划使用
+  </div>
+</footer>
+
+<!-- ============ BACKGROUND MUSIC ============ -->
+<audio id="bgm" src="bgm.m4a" loop preload="auto"></audio>
+<button id="music-toggle" class="music-toggle paused" type="button" aria-label="背景音乐" title="播放背景音乐"><span class="music-icon">♪</span></button>
+
+<script>
+(function() {
+  const audio = document.getElementById('bgm');
+  if (!audio) return;
+
+  const fab = document.getElementById('music-toggle');
+  const player = document.getElementById('music-player');
+  const playBtn = document.getElementById('mp-btn');
+  const trackEl = document.getElementById('mp-track');
+  const fillEl = document.getElementById('mp-fill');
+  const thumbEl = document.getElementById('mp-thumb');
+  const timeEl = document.getElementById('mp-time');
+
+  audio.volume = 0.38;
+
+  function fmt(t){ if(!isFinite(t)||t<0)t=0; const m=Math.floor(t/60), s=Math.floor(t%60); return m+':'+(s<10?'0':'')+s; }
+
+  function reflect(){
+    const playing = !audio.paused;
+    if (player) player.classList.toggle('playing', playing);
+    if (fab) {
+      fab.classList.toggle('playing', playing);
+      fab.classList.toggle('paused', !playing);
+      fab.title = playing ? '暂停背景音乐' : '播放背景音乐';
+    }
+  }
+  function updateProgress(){
+    const dur = audio.duration || 0;
+    const pct = dur ? (audio.currentTime/dur)*100 : 0;
+    if (fillEl) fillEl.style.width = pct+'%';
+    if (thumbEl) thumbEl.style.left = pct+'%';
+    if (timeEl) timeEl.textContent = fmt(audio.currentTime)+' / '+fmt(dur);
+  }
+  audio.addEventListener('play', reflect);
+  audio.addEventListener('pause', reflect);
+  audio.addEventListener('timeupdate', updateProgress);
+  audio.addEventListener('loadedmetadata', updateProgress);
+  audio.addEventListener('durationchange', updateProgress);
+
+  function toggle(e){ if(e) e.stopPropagation(); if(audio.paused) audio.play().catch(function(){}); else audio.pause(); }
+  if (playBtn) playBtn.addEventListener('click', toggle);
+  if (fab) fab.addEventListener('click', toggle);
+
+  if (trackEl) {
+    let dragging = false;
+    function seek(e){
+      const rect = trackEl.getBoundingClientRect();
+      const x = (e.touches && e.touches[0]) ? e.touches[0].clientX : e.clientX;
+      let ratio = (x - rect.left) / rect.width;
+      ratio = Math.max(0, Math.min(1, ratio));
+      if (audio.duration) audio.currentTime = ratio * audio.duration;
+      updateProgress();
+    }
+    trackEl.addEventListener('mousedown', function(e){dragging=true;seek(e);e.preventDefault()});
+    document.addEventListener('mousemove', function(e){if(dragging)seek(e)});
+    document.addEventListener('mouseup', function(){dragging=false});
+    trackEl.addEventListener('touchstart', seek, {passive:true});
+    trackEl.addEventListener('touchmove', seek, {passive:true});
+  }
+
+  // Entry overlay
+  const overlay = document.getElementById('enter-overlay');
+  if (overlay) {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    let entered = false;
+    function enterTrip(){
+      if (entered) return;
+      entered = true;
+      overlay.classList.add('hidden');
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      audio.play().catch(function(){});
+      setTimeout(function(){ overlay.style.display='none'; }, 700);
+    }
+    overlay.addEventListener('click', enterTrip);
+    overlay.addEventListener('keydown', enterTrip);
+  }
+
+  // Fallback gestures
+  const gestures = ['click','scroll','keydown','touchstart'];
+  function autoStart(){
+    gestures.forEach(function(ev){ document.removeEventListener(ev, autoStart); });
+    if (audio.paused) audio.play().catch(function(){});
+  }
+  gestures.forEach(function(ev){ document.addEventListener(ev, autoStart, {passive:true}); });
+
+  audio.play().catch(function(){});
+  reflect(); updateProgress();
+})();
+</script>
+
+</body>
+</html>
